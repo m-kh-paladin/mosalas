@@ -407,7 +407,10 @@ header .responsive-nav ul {
 
 .margin-top {
     margin-top: 20px;
+    display: block;
 }
+
+
 
 /***************************PULLS*************************/
 
