@@ -3,7 +3,7 @@
 }
 
 @font-face {
-    font-family: vazir-bold;
+    font-family: 'vazir-bold';
     src: url(../fonts/Vazir-Bold.woff) format('woff');
     src: url(../fonts/Vazir-Bold.ttf) format('ttf');
     src: url(../fonts/Vazir-Bold.eot) format('eot');
@@ -11,7 +11,7 @@
 }
 
 @font-face {
-    font-family: vazir;
+    font-family: 'vazir';
     src: url(../fonts/Vazir.ttf) format('ttf');
     src: url(../fonts/Vazir.eot) format('eot');
     src: url(../fonts/Vazir.woff) format('woff');
@@ -19,7 +19,7 @@
 }
 
 body {
-    font-family: vazir;
+    font-family: 'vazir';
     background-color: #ECECEC;
 }
 
@@ -69,12 +69,6 @@ header {
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.wrapper::after {
-    content: "";
-    clear: both;
-    display: block;
 }
 
 .container {
@@ -410,8 +404,6 @@ header .responsive-nav ul {
     display: block;
 }
 
-
-
 /***************************PULLS*************************/
 
 .pull-right {
@@ -431,7 +423,7 @@ header .responsive-nav ul {
 
 @media screen and (min-width:950px) {
     .pull-right {
-        width: 70%;
+        width: 75%;
         float: right;
     }
 }
@@ -445,7 +437,7 @@ header .responsive-nav ul {
 
 @media screen and (min-width:950px) {
     .pull-left {
-        width: 30%;
+        width: 25%;
         float: left;
     }
 }
@@ -465,7 +457,7 @@ header .responsive-nav ul {
 
 @media screen and (min-width:950px) {
     .column-right {
-        width: 35%;
+        width: 30%;
         float: right;
     }
 }
@@ -481,7 +473,7 @@ header .responsive-nav ul {
 
 @media screen and (min-width:950px) {
     .column-mid {
-        width: 65%;
+        width: 70%;
     }
 }
 
@@ -514,27 +506,44 @@ header .responsive-nav ul {
     margin: 0 10px;
 }
 
-.first-box h3 {
+.first-box h1 {
     color: #1a7e43;
     padding: 10px;
+    line-height: 25px;
+    font-size: 1.1em;
+    text-align: justify;
 }
 
 @media screen and (min-width:750px) {
-    .first-box h3 {
+    .first-box h1 {
         font-size: .9em;
     }
 }
 
 @media screen and (min-width:950px) {
-    .first-box h3 {
+    .first-box h1 {
         font-size: .9em;
     }
 }
 
 .first-box p {
     font-size: .8em;
+    line-height: 15px;
     color: #303030;
     padding: 0 10px;
+    text-align: justify;
+}
+
+@media screen and (min-width:750px) {
+    .first-box p {
+        line-height: 25px;
+    }
+}
+
+@media screen and (min-width:950px) {
+    .first-box p {
+        line-height: 20px;
+    }
 }
 
 .first-box img {
@@ -544,7 +553,6 @@ header .responsive-nav ul {
 
 /*************************** SECOND - BOX *************************/
 
-/*
 .second-box {
     background-color: white;
     box-shadow: 0 0 2px rgba(0, 0, 0, .3);
@@ -559,8 +567,8 @@ header .responsive-nav ul {
     width: 100%;
 }
 
-.second-box section {
-    margin: 10px;
+.second-box {
+    padding: 10px;
 }
 
 .second-box figcaption {
@@ -568,7 +576,19 @@ header .responsive-nav ul {
     width: 100%;
     bottom: 0;
     right: 0;
-    background: rgba(0, 0, 0, .8);
+    background: rgba(0, 0, 0, .6);
+}
+
+.second-box figcaption h2 {
+    font-size: 1em;
+    padding: 0 10px;
+    color: #f5e590;
+}
+
+.second-box figcaption p {
+    font-size: .9em;
+    color: white;
+    padding:  5px 10px;
 }
 
 /***************************LEFT*************************/
