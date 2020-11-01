@@ -34,6 +34,15 @@ li {
     list-style: none;
 }
 
+.clear-fix {
+    clear: both;
+}
+
+figure {
+    padding: 0;
+    margin: 0;
+}
+
 :focus {
     outline: none;
 }
@@ -48,15 +57,13 @@ header {
     background-image: url(../images/shape-banner.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
-
 }
 
-@media screen and (min-width:600px) {
-    .mosalas-header {
-    }
+@media screen and (min-width:750px) {
+    .mosalas-header {}
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:950px) {
     .mosalas-header {
         background-position-x: 241px;
         background-position-y: -40px;
@@ -102,7 +109,7 @@ header {
     text-align: center;
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:750px) {
     .icons {
         text-align: left;
     }
@@ -119,7 +126,7 @@ header {
     margin: 20px auto;
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:750px) {
     .logo {
         width: 25%;
         float: right;
@@ -127,7 +134,7 @@ header {
     }
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:950px) {
     .logo {
         width: 20%;
         float: right;
@@ -139,7 +146,7 @@ header {
     height: 100%;
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:750px) {
     .logo img {
         width: 100%;
         height: 100%;
@@ -147,7 +154,7 @@ header {
     }
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:950px) {
     .logo img {
         width: 100%;
         height: 100%;
@@ -162,7 +169,7 @@ header {
     margin: 42PX 0 10px;
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:750px) {
     .date-search {
         width: 60%;
         float: left;
@@ -170,20 +177,20 @@ header {
     }
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:950px) {
     .date-search {
         width: 55%;
     }
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:750px) {
     .date-search time {
         font-size: .8em;
         padding-left: 13px;
     }
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:950px) {
     .date-search time {
         font-size: .8em;
         padding-left: 20px;
@@ -218,13 +225,13 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
     padding: 0 10px;
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:750px) {
     .search {
         width: 100%;
     }
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:950px) {
     .search {
         width: 100%;
     }
@@ -238,7 +245,7 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
     left: 20px;
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:750px) {
     .search i {
         font-size: 1em;
         top: 10px;
@@ -246,7 +253,7 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
     }
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:950px) {
     .search i {
         font-size: 1em;
         top: 10px;
@@ -261,7 +268,7 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
     padding-right: 10px;
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:750px) {
     .search input {
         width: 60%;
         float: left;
@@ -270,7 +277,7 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
     }
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:950px) {
     .search input {
         width: 42%;
         float: left;
@@ -297,7 +304,7 @@ header .normal-nav .wrapper ul li {
     text-align: center;
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:950px) {
     header .normal-nav .wrapper ul li {
         display: inline-block;
     }
@@ -326,7 +333,7 @@ header .normal-nav .wrapper ul li a:hover {
 }
 */
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:950px) {
     header .normal-nav .wrapper ul li a {
         color: white;
         padding: 12px;
@@ -340,13 +347,13 @@ header .normal-nav {
     display: none;
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:750px) {
     header .normal-nav {
         display: none;
     }
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:950px) {
     header .normal-nav {
         display: block;
     }
@@ -370,13 +377,13 @@ header .responsive-nav ul {
     padding: 15px;
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:750px) {
     header .responsive-nav .wrapper {
         display: block;
     }
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:950px) {
     header .responsive-nav {
         background: #444444;
         display: none;
@@ -416,28 +423,28 @@ header .responsive-nav ul {
     width: 100%;
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:750px) {
     .pull-right {
         width: 100%;
         float: right;
     }
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:950px) {
     .pull-right {
         width: 70%;
         float: right;
     }
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:750px) {
     .pull-left {
         width: 100%;
         float: left;
     }
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:950px) {
     .pull-left {
         width: 30%;
         float: left;
@@ -450,37 +457,121 @@ header .responsive-nav ul {
     background-color: lightgreen;
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:750px) {
     .column-right {
-        width: 40%;
+        width: 30%;
         float: right;
     }
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:950px) {
     .column-right {
         width: 35%;
         float: right;
     }
 }
 
-/***************************MID*************************/
+/*************************** MID *************************/
 
-.column-mid {
-    background-color: maroon;
+.column-mid {}
+
+@media screen and (min-width:750px) {
+    .column-mid {
+        width: 70%;
+        float: left;
+    }
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:950px) {
     .column-mid {
+        width: 65%;
+    }
+}
+
+/*************************** FIRST - BOX *************************/
+
+@media screen and (min-width:750px) {
+    .first-box-image {
         width: 60%;
         float: left;
     }
 }
 
-@media screen and (min-width:800px) {
-    .column-mid {
-        width: 65%;
+@media screen and (min-width:750px) {
+    .first-box-image img {
+        width: 100%;
+        float: left;
     }
+}
+
+@media screen and (min-width:750px) {
+    .first-box-details {
+        width: 40%;
+        float: right;
+    }
+}
+
+.first-box {
+    background-color: white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .3);
+    margin: 0 10px;
+}
+
+.first-box h3 {
+    color: #1a7e43;
+    padding: 10px;
+}
+
+@media screen and (min-width:750px) {
+    .first-box h3 {
+        font-size: .9em;
+    }
+}
+
+@media screen and (min-width:950px) {
+    .first-box h3 {
+        font-size: .9em;
+    }
+}
+
+.first-box p {
+    font-size: .8em;
+    color: #303030;
+    padding: 0 10px;
+}
+
+.first-box img {
+    width: 100%;
+    padding: 10px;
+}
+
+/*************************** SECOND - BOX *************************/
+
+/*
+.second-box {
+    background-color: white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .3);
+    margin: 0 10px;
+}
+
+.second-box figure {
+    position: relative;
+}
+
+.second-box figure img {
+    width: 100%;
+}
+
+.second-box section {
+    margin: 10px;
+}
+
+.second-box figcaption {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .8);
 }
 
 /***************************LEFT*************************/
@@ -489,7 +580,7 @@ header .responsive-nav ul {
     background-color: orangered;
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:950px) {
     .column-left {
         width: 100%;
         float: left;
