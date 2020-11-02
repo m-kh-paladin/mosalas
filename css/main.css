@@ -479,6 +479,10 @@ header .responsive-nav ul {
 
 /*************************** FIRST - BOX *************************/
 
+.first-box-image a {
+    display: inline-block;
+}
+
 @media screen and (min-width:750px) {
     .first-box-image {
         width: 60%;
@@ -579,8 +583,8 @@ header .responsive-nav ul {
     background: rgba(0, 0, 0, .6);
 }
 
-.second-box figcaption h2 {
-    font-size: 1em;
+.second-box figcaption h2 a {
+    font-size: .7em;
     padding: 0 10px;
     color: #f5e590;
 }
@@ -588,32 +592,140 @@ header .responsive-nav ul {
 .second-box figcaption p {
     font-size: .9em;
     color: white;
-    padding:  5px 10px;
+    padding: 5px 10px;
 }
 
-/***************************LEFT*************************/
+/***************************HEADER-NEWS*************************/
 
-.column-left {
-    background-color: orangered;
+.header-news {
+    display: block;
+    background-image: url(../images/hashor-min.png);
 }
 
-@media screen and (min-width:950px) {
-    .column-left {
-        width: 100%;
+.header-news h3 {
+    background-color: #c92727;
+    display: inline-block;
+    margin: 0;
+}
+
+.header-news a {
+    color: white;
+    font-size: .8em;
+    padding: 10px;
+    display: block;
+}
+
+/***************************column-mid-NEWS*************************/
+
+.news-title h3 a {
+    display: block;
+}
+
+.column-mid-news {
+    background-color: white;
+    margin: 10px;
+}
+
+.news-details {
+    padding: 10px;
+    border: 1px solid #e4e4e4;
+}
+
+.news-details:hover {
+    background-color: #EFEFEF;
+    transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+}
+
+.news-details:hover a {
+    color: #C92727;
+}
+
+.news-details .news-pic {
+    width: 100%;
+}
+
+@media screen and (min-width:750px) {
+    .news-details .news-pic {
+        margin-top: 10px;
+        width: 43%;
+        float: right;
+    }
+}
+
+@media screen and (min-width:950PX) {
+    .news-details .news-pic {
+        width: 35%;
+        float: right;
+        margin-top: 10px;
+    }
+}
+
+.news-details .news-pic img {
+    width: 100%;
+}
+
+.news-details .news-title h3 {
+    color: #3b3b3b;
+    line-height: 25px;
+    margin: 8px;
+}
+
+@media screen and (min-width:750px) {
+    .news-details .news-title h3 {
+        font-size: .9em;
+        width: 53%;
         float: left;
     }
 }
 
-/***************************FOOTER*************************/
-
-footer {
-    background-color: olive;
+@media screen and (min-width:950px) {
+    .news-details .news-title h3 {
+        font-size: 1.1em;
+        width: 60%;
+        float: left;
+    }
 }
 
-footer nav {
-    background-color: paleturquoise;
+.news-details .news-lead p {
+    color: #666;
+    text-align: justify;
+    line-height: 25px;
+    margin: 8px;
 }
 
-.creator {
-    background-color: mediumslateblue;
+@media screen and (min-width:750px) {
+    .news-details .news-lead p {
+        width: 53%;
+        float: left;
+        font-size: .8em;
+    }
 }
+
+@media screen and (min-width:950PX) {
+    .news-details .news-lead p {
+        width: 60%;
+        float: left;
+        font-size: .8em;
+    }
+    /***************************LEFT*************************/
+    .column-left {
+        background-color: orangered;
+    }
+    @media screen and (min-width:950px) {
+        .column-left {
+            width: 100%;
+            float: left;
+        }
+    }
+    /***************************FOOTER*************************/
+    footer {
+        background-color: olive;
+    }
+    footer nav {
+        background-color: paleturquoise;
+    }
+    .creator {
+        background-color: mediumslateblue;
+    }
