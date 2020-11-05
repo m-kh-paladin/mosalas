@@ -455,6 +455,7 @@ header .responsive-nav ul {
     padding-top: 15px;
     font-size: .6em;
     color: black;
+    padding-bottom: 20px;
 }
 
 .fake-icons {
@@ -474,7 +475,7 @@ header .responsive-nav ul {
 
 .between {
     background-color: white;
-    margin: 40px 0 15px;
+    margin: 25px 0 15px;
     padding: 6px;
 }
 
@@ -498,21 +499,36 @@ header .responsive-nav ul {
 
 .yaddasht {
     background-color: white;
+    display: inline-block;
 }
 
 .yaddasht img {
     border-radius: 50%;
 }
 
+.yaddasht ul {
+    padding: 5px;
+}
+
 .yaddasht ul li {
-    padding: 8px;
+    border-bottom: 1px solid #E6E6E6;
 }
 
 .yaddasht time {
     color: #666;
-    font-size: .7em;
+    font-size: .6em;
     padding: 5px;
+    margin-bottom: 5px;
     display: block;
+}
+
+.yaddasht ul li:hover time{
+    font-size: .7em;
+    background-color: #787878;
+    color: white;
+    transition: all .4s ease-in;
+    -moz-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
 }
 
 .yaddasht .image-date {
@@ -521,7 +537,7 @@ header .responsive-nav ul {
 }
 
 .yaddasht .title-name {
-    width: 60%;
+    width: 55%;
     float: left;
 }
 
@@ -538,8 +554,22 @@ header .responsive-nav ul {
 }
 
 .yaddasht .title-name a i {
+    color: green;
     font-size: 1em;
-   
+}
+
+.yaddasht .more {
+    padding: 4px 10px;
+    font-size: .9em;
+    color: white;
+    background-color: #c92727;
+    display: table;
+    margin: 10px auto;
+    opacity: .4;
+}
+
+.yaddasht .more:hover {
+    opacity: 1;
 }
 
 /*************************** MID *************************/
@@ -559,7 +589,9 @@ header .responsive-nav ul {
 
 /*************************** FIRST - BOX *************************/
 
-.first-box-image a {}
+.first-box-image a {
+    display: block;
+}
 
 @media screen and (min-width:750px) {
     .first-box-image {
