@@ -29,7 +29,7 @@ a {
     -moz-transition: all .3s ease-in;
     -o-transition: all .3s ease-in;
 }
-
+    
 li {
     list-style: none;
 }
@@ -522,7 +522,7 @@ header .responsive-nav ul {
     display: block;
 }
 
-.yaddasht ul li:hover time{
+.yaddasht ul li:hover time {
     font-size: .7em;
     background-color: #787878;
     color: white;
@@ -574,6 +574,10 @@ header .responsive-nav ul {
 
 /*************************** MID *************************/
 
+.column-mid {
+    padding-right: 15px;
+}
+
 @media screen and (min-width:750px) {
     .column-mid {
         width: 70%;
@@ -617,7 +621,6 @@ header .responsive-nav ul {
 .first-box {
     background-color: white;
     box-shadow: 0 0 2px rgba(0, 0, 0, .3);
-    margin: 0 10px;
 }
 
 .first-box h1 {
@@ -670,7 +673,6 @@ header .responsive-nav ul {
 .second-box {
     background-color: white;
     box-shadow: 0 0 2px rgba(0, 0, 0, .3);
-    margin: 0 10px;
 }
 
 .second-box figure {
@@ -727,13 +729,16 @@ header .responsive-nav ul {
 
 /***************************column-mid-NEWS*************************/
 
-.news-title h3 a {
+.title h3 {
+    margin: 0;
+}
+
+.title h3 a {
     display: block;
 }
 
 .column-mid-news {
     background-color: white;
-    margin: 10px;
 }
 
 .news-details {
@@ -748,7 +753,7 @@ header .responsive-nav ul {
     -o-transition: all .3s ease-in;
 }
 
-.news-details:hover a {
+.news-details:hover h3 a {
     color: #C92727;
 }
 
@@ -776,14 +781,15 @@ header .responsive-nav ul {
     width: 100%;
 }
 
-.news-details .news-title h3 {
-    color: #3b3b3b;
+.news-details .title h3 a {
+    color: #3B3B3B;
+    display: block;
     line-height: 25px;
-    margin: 8px;
+    margin: 25px 0 0 10px;
 }
 
 @media screen and (min-width:750px) {
-    .news-details .news-title h3 {
+    .news-details .title h3 a {
         font-size: .9em;
         width: 53%;
         float: left;
@@ -791,22 +797,22 @@ header .responsive-nav ul {
 }
 
 @media screen and (min-width:950px) {
-    .news-details .news-title h3 {
+    .news-details .title h3 a {
         font-size: 1.1em;
         width: 60%;
         float: left;
     }
 }
 
-.news-details .news-lead p {
+.news-details .lead p {
     color: #666;
     text-align: justify;
     line-height: 25px;
-    margin: 8px;
+    margin-left: 10px;
 }
 
 @media screen and (min-width:750px) {
-    .news-details .news-lead p {
+    .news-details .lead p {
         width: 53%;
         float: left;
         font-size: .8em;
@@ -814,7 +820,7 @@ header .responsive-nav ul {
 }
 
 @media screen and (min-width:950PX) {
-    .news-details .news-lead p {
+    .news-details .lead p {
         width: 60%;
         float: left;
         font-size: .8em;
