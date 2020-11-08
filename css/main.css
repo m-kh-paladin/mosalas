@@ -29,7 +29,7 @@ a {
     -moz-transition: all .3s ease-in;
     -o-transition: all .3s ease-in;
 }
-    
+
 li {
     list-style: none;
 }
@@ -753,7 +753,10 @@ header .responsive-nav ul {
     -o-transition: all .3s ease-in;
 }
 
-.news-details:hover h3 a {
+.column-mid-news .news-details:hover h3 a {
+    transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
     color: #C92727;
 }
 
@@ -798,7 +801,7 @@ header .responsive-nav ul {
 
 @media screen and (min-width:950px) {
     .news-details .title h3 a {
-        font-size: 1.1em;
+        font-size: .9em;
         width: 60%;
         float: left;
     }
