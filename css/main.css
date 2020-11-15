@@ -18,6 +18,11 @@
     src: url(../fonts/Vazir.woff2) format('woff2');
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'vazir';
     background-color: #ECECEC;
@@ -38,7 +43,7 @@ li {
     clear: both;
 }
 
-figure {
+.second-box-img {
     padding: 0;
     margin: 0;
 }
@@ -83,12 +88,8 @@ header {
 
 /***************************SOCIAL*************************/
 
-.social {
-    background: linear-gradient(to right, #9A1D23, #D22229);
-}
-
 .social a {
-    color: white;
+    color: #fff;
     font-size: 1.2em;
     padding: 5px;
 }
@@ -118,50 +119,55 @@ header {
 
 @media screen and (min-width:750px) {
     .logo {
-        width: 25%;
+        width: 30%;
         float: right;
-        margin: 15px 15PX 25PX 15px
+        padding: 20px;
+        margin: 0;
     }
 }
 
 @media screen and (min-width:950px) {
     .logo {
-        width: 20%;
-        float: right;
+        width: 25%;
     }
+}
+
+.logo a {
+    display: block;
 }
 
 .logo img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    display: block;
 }
 
 @media screen and (min-width:750px) {
     .logo img {
         width: 100%;
-        height: 100%;
-        float: right;
+        height: auto;
     }
 }
 
 @media screen and (min-width:950px) {
     .logo img {
         width: 100%;
-        height: 100%;
+        height: auto;
     }
 }
 
 /*************************** DATE-SEARCH *************************/
 
 .date-search {
-    color: white;
+    color: #fff;
     text-align: center;
-    margin: 42PX 0 10px;
+    padding: 0 10px;
 }
 
 @media screen and (min-width:750px) {
     .date-search {
-        width: 60%;
+        width: 40%;
+        padding: 38px 0 0 20PX;
         float: left;
         text-align: left;
     }
@@ -169,25 +175,23 @@ header {
 
 @media screen and (min-width:950px) {
     .date-search {
-        width: 55%;
+        width: 25%;
     }
 }
 
 @media screen and (min-width:750px) {
     .date-search time {
         font-size: .8em;
-        padding-left: 13px;
     }
 }
 
 @media screen and (min-width:950px) {
     .date-search time {
         font-size: .8em;
-        padding-left: 20px;
     }
 }
 
-.date-search i {
+.date-search time i {
     font-size: .5em;
 }
 
@@ -209,70 +213,22 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
     display: none;
 }
 
-.search {
+.date-search form {
     position: relative;
-    text-align: center;
-    padding: 0 10px;
 }
 
-@media screen and (min-width:750px) {
-    .search {
-        width: 100%;
-    }
-}
-
-@media screen and (min-width:950px) {
-    .search {
-        width: 100%;
-    }
-}
-
-.search i {
-    position: absolute;
-    font-size: 1em;
-    color: #666;
-    top: 20px;
-    left: 20px;
-}
-
-@media screen and (min-width:750px) {
-    .search i {
-        font-size: 1em;
-        top: 10px;
-        left: 15px;
-    }
-}
-
-@media screen and (min-width:950px) {
-    .search i {
-        font-size: 1em;
-        top: 10px;
-        left: 20px;
-    }
-}
-
-.search input {
+.date-search input {
     width: 100%;
-    height: 38px;
-    margin: 10px 0;
-    padding-right: 10px;
+    padding: 8px;
+    margin: 10px auto;
 }
 
-@media screen and (min-width:750px) {
-    .search input {
-        width: 60%;
-        float: left;
-        margin: 0 0 10px 0;
-        padding-right: 10px;
-    }
-}
-
-@media screen and (min-width:950px) {
-    .search input {
-        width: 42%;
-        float: left;
-        padding-right: 10px;
-    }
+.date-search form i {
+    position: absolute;
+    color: #8d8484;
+    font-size: 1.2em;
+    top: 18px;
+    left: 11px;
 }
 
 /***************************NAVICATION*************************/
@@ -311,7 +267,7 @@ header .normal-nav .wrapper ul li {
 }
 
 header .normal-nav .wrapper ul li a {
-    color: white;
+    color: #fff;
     display: block;
     padding: 15px;
 }
@@ -325,7 +281,7 @@ header .normal-nav .wrapper ul li a:hover {
 
 @media screen and (min-width:950px) {
     header .normal-nav .wrapper ul li a {
-        color: white;
+        color: #fff;
         padding: 12px;
     }
 }
@@ -362,7 +318,7 @@ header .responsive-nav ul {
 }
 
 .responsive-nav ul li a {
-    color: white;
+    color: #fff;
     display: block;
     padding: 15px;
 }
@@ -387,7 +343,7 @@ header .responsive-nav ul {
 
 .responsive-nav .nav-bar .icon-bar {
     text-align: center;
-    color: white;
+    color: #fff;
     display: block;
     font-size: 1.3em;
     padding: 10px;
@@ -444,49 +400,18 @@ header .responsive-nav ul {
 
 /***************************RIGHT*************************/
 
-.pishkhan {
-    width: 100%;
-    background-color: white;
-    padding: 8px;
-}
-
-.pishkhan a i {
-    padding-right: 5px;
-    padding-top: 15px;
-    font-size: .6em;
-    color: black;
-    padding-bottom: 20px;
-}
-
-.fake-icons {
-    margin: 0 auto;
-}
-
-.pishkhan a {
-    display: inline-block;
-}
-
-.pishkhan img {
-    width: 100%;
-    overflow: hidden;
-}
-
 /***************************YADDASHT*************************/
-
-.between {
-    background-color: white;
-    margin: 25px 0 15px;
-    padding: 6px;
-}
 
 .column-right {
     margin-top: 10px;
+    padding: 0 15px;
 }
 
 @media screen and (min-width:750px) {
     .column-right {
         width: 30%;
         float: right;
+        padding: 0;
     }
 }
 
@@ -498,12 +423,19 @@ header .responsive-nav ul {
 }
 
 .yaddasht {
-    background-color: white;
-    display: inline-block;
+    background-color: #fff;
+    display: block;
+}
+
+.yaddasht a {
+    display: block;
 }
 
 .yaddasht img {
     border-radius: 50%;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .yaddasht ul {
@@ -512,20 +444,21 @@ header .responsive-nav ul {
 
 .yaddasht ul li {
     border-bottom: 1px solid #E6E6E6;
+    padding: 5px;
 }
 
 .yaddasht time {
     color: #666;
     font-size: .6em;
-    padding: 5px;
-    margin-bottom: 5px;
+    padding: 4px;
+    margin: 5px 0;
     display: block;
 }
 
 .yaddasht ul li:hover time {
     font-size: .7em;
     background-color: #787878;
-    color: white;
+    color: #fff;
     transition: all .4s ease-in;
     -moz-transition: all .4s ease-in;
     -o-transition: all .4s ease-in;
@@ -561,7 +494,7 @@ header .responsive-nav ul {
 .yaddasht .more {
     padding: 4px 10px;
     font-size: .9em;
-    color: white;
+    color: #fff;
     background-color: #c92727;
     display: table;
     margin: 10px auto;
@@ -575,7 +508,7 @@ header .responsive-nav ul {
 /*************************** MID *************************/
 
 .column-mid {
-    padding-right: 15px;
+    padding: 0 15px;
 }
 
 @media screen and (min-width:750px) {
@@ -593,7 +526,23 @@ header .responsive-nav ul {
 
 /*************************** FIRST - BOX *************************/
 
+.first-box {
+    background-color: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .3);
+    padding: 10px;
+}
+
+.first-box-image {
+    padding-right: 10px;
+}
+
 .first-box-image a {
+    display: block;
+}
+
+.first-box-image img {
+    width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -605,41 +554,39 @@ header .responsive-nav ul {
 }
 
 @media screen and (min-width:750px) {
-    .first-box-image img {
-        width: 100%;
-        float: left;
-    }
-}
-
-@media screen and (min-width:750px) {
     .first-box-details {
         width: 40%;
         float: right;
     }
 }
 
-.first-box {
-    background-color: white;
-    box-shadow: 0 0 2px rgba(0, 0, 0, .3);
+.first-box h1 {
+    margin: 0;
+    padding: 0;
 }
 
-.first-box h1 {
+.first-box h1 a {
     color: #1a7e43;
-    padding: 10px;
     line-height: 25px;
-    font-size: 1.1em;
-    text-align: justify;
+    font-size: .6em;
+}
+
+.first-box h1 a {
+    margin: 16px auto;
+    line-height: 23px;
+    display: block;
 }
 
 @media screen and (min-width:750px) {
-    .first-box h1 {
-        font-size: .9em;
+    .first-box h1 a {
+        font-size: .5em;
     }
 }
 
 @media screen and (min-width:950px) {
-    .first-box h1 {
-        font-size: 1em;
+    .first-box h1 a {
+        font-size: .6em;
+        line-height: 27px;
     }
 }
 
@@ -647,64 +594,56 @@ header .responsive-nav ul {
     font-size: .8em;
     line-height: 15px;
     color: #303030;
-    padding: 0 10px;
+    line-height: 24px;
     text-align: justify;
-}
-
-@media screen and (min-width:750px) {
-    .first-box p {
-        line-height: 25px;
-    }
-}
-
-@media screen and (min-width:950px) {
-    .first-box p {
-        line-height: 20px;
-    }
 }
 
 .first-box img {
     width: 100%;
-    padding: 10px;
 }
 
 /*************************** SECOND - BOX *************************/
 
 .second-box {
-    background-color: white;
+    background-color: #fff;
     box-shadow: 0 0 2px rgba(0, 0, 0, .3);
 }
 
-.second-box figure {
+.second-box .second-box-img {
     position: relative;
 }
 
-.second-box figure img {
+.second-box .second-box-img a {
+    display: block;
+}
+
+.second-box .second-box-img img {
     width: 100%;
+    height: auto;
+    display: block;
 }
 
 .second-box {
     padding: 10px;
 }
 
-.second-box figcaption {
+.second-box .second-box-title-lead {
     position: absolute;
     width: 100%;
     bottom: 0;
     right: 0;
     background: rgba(0, 0, 0, .6);
+    padding: 10px;
+    font-size: .8em;
 }
 
-.second-box figcaption h2 a {
-    font-size: .7em;
-    padding: 0 10px;
+.second-box .second-box-title-lead h2 a {
     color: #f5e590;
+    font-size: .7em;
 }
 
-.second-box figcaption p {
-    font-size: .9em;
-    color: white;
-    padding: 5px 10px;
+.second-box .second-box-title-lead p {
+    color: #fff;
 }
 
 /***************************HEADER-NEWS*************************/
@@ -721,7 +660,7 @@ header .responsive-nav ul {
 }
 
 .header-news a {
-    color: white;
+    color: #fff;
     font-size: .8em;
     padding: 8px 12px;
     display: block;
@@ -738,61 +677,68 @@ header .responsive-nav ul {
 }
 
 .column-mid-news {
-    background-color: white;
+    background-color: #fff;
 }
 
-.news-details {
-    padding: 10px;
+.news {
     border: 1px solid #e4e4e4;
+    font-size: .9em;
 }
 
-.news-details:hover {
+.news li {
+    border-bottom: 1px solid #E4E4E4;
+    padding: 10px;
+}
+
+.news li:hover {
     background-color: #EFEFEF;
     transition: all .3s ease-in;
     -moz-transition: all .3s ease-in;
     -o-transition: all .3s ease-in;
 }
 
-.column-mid-news .news-details:hover h3 a {
+.column-mid-news .news li:hover h3 a {
     transition: all .3s ease-in;
     -moz-transition: all .3s ease-in;
     -o-transition: all .3s ease-in;
     color: #C92727;
 }
 
-.news-details .news-pic {
+.news .news-pic img {
     width: 100%;
+    height: auto;
+    display: block;
+}
+
+.news .news-pic a {
+    display: block;
 }
 
 @media screen and (min-width:750px) {
-    .news-details .news-pic {
-        margin-top: 10px;
+    .news .news-pic {
         width: 43%;
         float: right;
     }
 }
 
 @media screen and (min-width:950PX) {
-    .news-details .news-pic {
+    .news .news-pic {
         width: 35%;
-        float: right;
-        margin-top: 10px;
     }
 }
 
-.news-details .news-pic img {
+.news .news-pic img {
     width: 100%;
 }
 
-.news-details .title h3 a {
+.news .title h3 a {
     color: #3B3B3B;
     display: block;
     line-height: 25px;
-    margin: 25px 0 0 10px;
 }
 
 @media screen and (min-width:750px) {
-    .news-details .title h3 a {
+    .news .title h3 a {
         font-size: .9em;
         width: 53%;
         float: left;
@@ -800,14 +746,13 @@ header .responsive-nav ul {
 }
 
 @media screen and (min-width:950px) {
-    .news-details .title h3 a {
+    .news .title h3 a {
         font-size: .9em;
         width: 60%;
-        float: left;
     }
 }
 
-.news-details .lead p {
+.news .lead p {
     color: #666;
     text-align: justify;
     line-height: 25px;
@@ -815,7 +760,7 @@ header .responsive-nav ul {
 }
 
 @media screen and (min-width:750px) {
-    .news-details .lead p {
+    .news .lead p {
         width: 53%;
         float: left;
         font-size: .8em;
@@ -823,28 +768,193 @@ header .responsive-nav ul {
 }
 
 @media screen and (min-width:950PX) {
-    .news-details .lead p {
+    .news .lead p {
         width: 60%;
-        float: left;
         font-size: .8em;
     }
-    /***************************LEFT*************************/
+}
+
+.news .more {
+    padding: 4px 10px;
+    font-size: .9em;
+    color: #fff;
+    background-color: #c92727;
+    display: table;
+    margin: 10px auto;
+    opacity: .4;
+}
+
+.news .more:hover {
+    opacity: 1;
+}
+
+/***************************LEFT*************************/
+
+.column-left {
+    width: 100%;
+    padding: 0 15px;
+}
+
+@media screen and (min-width:750px) {
     .column-left {
-        background-color: orangered;
+        padding: 0;
     }
-    @media screen and (min-width:950px) {
-        .column-left {
-            width: 100%;
-            float: left;
-        }
+}
+
+@media screen and (min-width:950px) {
+    .column-left {
+        margin-top: 10px;
+        float: left;
     }
-    /***************************FOOTER*************************/
-    footer {
-        background-color: olive;
+}
+
+.last-news-header {
+    background-color: #444444;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (min-width:750px) {
+    .last-news-header {
+        justify-content: space-evenly;
     }
-    footer nav {
-        background-color: paleturquoise;
+}
+
+@media screen and (min-width:950px) {
+    .last-news-header {
+        justify-content: start;
     }
-    .creator {
-        background-color: mediumslateblue;
-    }
+}
+
+.last-news-header h3 a {
+    font-size: .8em;
+    color: #fff;
+    padding: 7px 13px;
+    float: right;
+}
+
+.last-news-header h3:nth-child(1) {
+    border-bottom: 2px solid red;
+}
+
+.last-news {
+    background-color: #fff;
+    padding: 0 10px;
+    width: 100%;
+    display: inline-block;
+}
+
+.last-news li {
+    border-bottom: 1px solid #e4e4e4;
+    padding: 5px 10px;
+}
+
+.last-news a {
+    color: #454545;
+    line-height: 25px;
+    text-align: justify;
+    font-size: .8em;
+}
+
+.last-news i {
+    color: #c92727;
+    font-size: .4em;
+}
+
+.last-news .more {
+    padding: 0 12px;
+    font-size: .9em;
+    color: #fff;
+    background-color: #c92727;
+    display: table;
+    margin: 10px auto;
+    opacity: .4;
+}
+
+.last-news .more:hover {
+    opacity: 1;
+}
+
+.last-news-part2 a {
+    background-color: #444;
+    display: block;
+    padding: 15px 10px;
+    margin: 10px auto;
+    text-align: center;
+    color: #fff;
+}
+
+/***************************FOOTER*************************/
+
+footer {
+    background-color: #1D1D1D;
+    padding: 10px 0;
+}
+
+footer nav {
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+}
+
+footer nav i {
+    color: #c92727;
+    font-size: .2em;
+    padding-right: 4px;
+}
+
+footer nav ul li {
+    display: inline-block;
+}
+
+footer nav a {
+    color: #fff;
+    display: inline-block;
+    padding: 15px 5px;
+    font-size: .7em;
+}
+
+footer nav a:hover {
+    color: #5F5D5F;
+}
+
+.content-us {
+    display: flex;
+    justify-content: center;
+}
+
+.content-us ul li {
+    display: inline-block;
+}
+
+.content-us ul a {
+    color: #fff;
+    padding: 15px 10px;
+    font-size: .8em;
+    display: block;
+}
+
+.content-us ul a:hover {
+    color: red;
+}
+
+footer .social {
+    outline: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+}
+
+footer .social a {
+    padding: 5px;
+}
+
+footer .social a:hover {
+    color: red;
+}
+
+.creator p {
+    text-align: center;
+    color: #ec8f8f;
+    font-size: .8em;
+    margin: 30px 0;
+}
