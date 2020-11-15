@@ -424,7 +424,7 @@ header .responsive-nav ul {
 
 .yaddasht {
     background-color: #fff;
-    display: block;
+    display: inline-block;
 }
 
 .yaddasht a {
