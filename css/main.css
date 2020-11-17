@@ -257,8 +257,8 @@ header .normal-nav .wrapper ul li {
 }
 
 .normal-nav ul li:nth-child(1) {
-    background-color: #333333;
-    border-bottom: 2px solid red;
+    background-color: #444444;
+    border-bottom: 2px solid #444444;
 }
 
 .responsive-nav ul li:nth-child(1) {
@@ -272,12 +272,10 @@ header .normal-nav .wrapper ul li a {
     padding: 15px;
 }
 
-/*
 header .normal-nav .wrapper ul li a:hover {
     background-color: #333333;
     border-bottom: 2px solid red;
 }
-*/
 
 @media screen and (min-width:950px) {
     header .normal-nav .wrapper ul li a {
@@ -448,6 +446,7 @@ header .responsive-nav ul {
 }
 
 .yaddasht time {
+    width: 85px;
     color: #666;
     font-size: .6em;
     padding: 4px;
@@ -456,7 +455,7 @@ header .responsive-nav ul {
 }
 
 .yaddasht ul li:hover time {
-    font-size: .7em;
+    width: 100px;
     background-color: #787878;
     color: #fff;
     transition: all .4s ease-in;
@@ -672,7 +671,14 @@ header .responsive-nav ul {
     margin: 0;
 }
 
-.title h3 a {
+.news .title h3 a {
+    font-size: .9em;
+    color: #3B3B3B;
+    line-height: 25px;
+    display: block;
+}
+
+.news .news-pic a {
     display: block;
 }
 
@@ -704,51 +710,33 @@ header .responsive-nav ul {
     color: #C92727;
 }
 
-.news .news-pic img {
+.news .news-pic {
     width: 100%;
-    height: auto;
-    display: block;
-}
-
-.news .news-pic a {
-    display: block;
 }
 
 @media screen and (min-width:750px) {
     .news .news-pic {
-        width: 43%;
+        width: 40%;
         float: right;
     }
 }
 
-@media screen and (min-width:950PX) {
-    .news .news-pic {
-        width: 35%;
-    }
-}
-
 .news .news-pic img {
     width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
 }
 
-.news .title h3 a {
-    color: #3B3B3B;
-    display: block;
-    line-height: 25px;
+.news .news-details {
+    width: 100%;
+    padding: 10px;
 }
 
 @media screen and (min-width:750px) {
-    .news .title h3 a {
-        font-size: .9em;
-        width: 53%;
-        float: left;
-    }
-}
-
-@media screen and (min-width:950px) {
-    .news .title h3 a {
-        font-size: .9em;
+    .news .news-details {
         width: 60%;
+        float: left;
     }
 }
 
@@ -756,22 +744,7 @@ header .responsive-nav ul {
     color: #666;
     text-align: justify;
     line-height: 25px;
-    margin-left: 10px;
-}
-
-@media screen and (min-width:750px) {
-    .news .lead p {
-        width: 53%;
-        float: left;
-        font-size: .8em;
-    }
-}
-
-@media screen and (min-width:950PX) {
-    .news .lead p {
-        width: 60%;
-        font-size: .8em;
-    }
+    font-size: .8em;
 }
 
 .news .more {
@@ -854,6 +827,10 @@ header .responsive-nav ul {
     line-height: 25px;
     text-align: justify;
     font-size: .8em;
+}
+
+.last-news li:hover a {
+    color: #38952E;
 }
 
 .last-news i {
@@ -957,4 +934,7 @@ footer .social a:hover {
     color: #ec8f8f;
     font-size: .8em;
     margin: 30px 0;
+    line-height: 25px;
+    padding: 0 10px;
 }
+
