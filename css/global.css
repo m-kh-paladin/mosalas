@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'vazir-bold';
+    src: url(../fonts/Vazir-Bold.woff) format('woff');
+    src: url(../fonts/Vazir-Bold.ttf) format('ttf');
+    src: url(../fonts/Vazir-Bold.eot) format('eot');
+    src: url(../fonts/Vazir-Bold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'vazir';
+    src: url(../fonts/Vazir.ttf) format('ttf');
+    src: url(../fonts/Vazir.eot) format('eot');
+    src: url(../fonts/Vazir.woff) format('woff');
+    src: url(../fonts/Vazir.woff2) format('woff2');
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'vazir';
+    background-color: #ECECEC;
+}
+
+a {
+    text-decoration: none;
+    transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+:focus {
+    outline: none;
+}
+
+/***************************HEADER-NEWS*************************/
+
+.header-news {
+    display: block;
+    background-image: url(../images/hashor-min.png);
+}
+
+.header-news h3 {
+    background-color: #c92727;
+    display: inline-block;
+    margin: 0;
+}
+
+.header-news a {
+    color: #fff;
+    font-size: .8em;
+    padding: 8px 12px;
+    display: block;
+}
+
+/***************************margin-top*************************/
+
+.margin-top {
+    margin-top: 20px;
+    display: block;
+}

@@ -1,57 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
-@font-face {
-    font-family: 'vazir-bold';
-    src: url(../fonts/Vazir-Bold.woff) format('woff');
-    src: url(../fonts/Vazir-Bold.ttf) format('ttf');
-    src: url(../fonts/Vazir-Bold.eot) format('eot');
-    src: url(../fonts/Vazir-Bold.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: 'vazir';
-    src: url(../fonts/Vazir.ttf) format('ttf');
-    src: url(../fonts/Vazir.eot) format('eot');
-    src: url(../fonts/Vazir.woff) format('woff');
-    src: url(../fonts/Vazir.woff2) format('woff2');
-}
-
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'vazir';
-    background-color: #ECECEC;
-}
-
-a {
-    text-decoration: none;
-    transition: all .3s ease-in;
-    -moz-transition: all .3s ease-in;
-    -o-transition: all .3s ease-in;
-}
-
-li {
-    list-style: none;
-}
-
-.clear-fix {
-    clear: both;
-}
-
-.second-box-img {
-    padding: 0;
-    margin: 0;
-}
-
-:focus {
-    outline: none;
-}
-
 /***************************START*************************/
 
 header {
@@ -256,14 +202,24 @@ header .normal-nav .wrapper ul li {
     }
 }
 
-.normal-nav ul li:nth-child(1) {
+.normal-nav ul li a {
     background-color: #444444;
-    border-bottom: 2px solid #444444;
+    border-bottom: 2px solid #444;
 }
 
-.responsive-nav ul li:nth-child(1) {
+.responsive-nav ul li a {
+    background-color: #444444;
+    border-bottom: 2px solid #444;
+}
+
+.normal-nav ul li:nth-child(1) a {
     background-color: #333333;
-    border-bottom: 2px solid red;
+    border-color: red;
+}
+
+.responsive-nav ul li:nth-child(1) a {
+    background-color: #333333;
+    border-color: red;
 }
 
 header .normal-nav .wrapper ul li a {
@@ -272,9 +228,14 @@ header .normal-nav .wrapper ul li a {
     padding: 15px;
 }
 
-header .normal-nav .wrapper ul li a:hover {
+header .normal-nav .wrapper ul li:hover a {
     background-color: #333333;
-    border-bottom: 2px solid red;
+    border-color: red;
+}
+
+header .responsive-nav .wrapper ul li:hover a {
+    background-color: #333333;
+    border-color: red;
 }
 
 @media screen and (min-width:950px) {
@@ -351,22 +312,7 @@ header .responsive-nav ul {
     cursor: pointer;
 }
 
-/***************************margin-top*************************/
-
-.margin-top {
-    margin-top: 20px;
-    display: block;
-}
-
 /***************************PULLS*************************/
-
-.pull-right {
-    width: 100%;
-}
-
-.pull-left {
-    width: 100%;
-}
 
 @media screen and (min-width:750px) {
     .pull-right {
@@ -398,7 +344,7 @@ header .responsive-nav ul {
 
 /***************************RIGHT*************************/
 
-/***************************YADDASHT*************************/
+/***************************review*************************/
 
 .column-right {
     margin-top: 10px;
@@ -420,41 +366,41 @@ header .responsive-nav ul {
     }
 }
 
-.yaddasht {
+.review {
     background-color: #fff;
     display: grid;
 }
 
-.yaddasht a {
+.review a {
     display: block;
 }
 
-.yaddasht img {
+.review img {
     border-radius: 50%;
     display: block;
     width: 100%;
     height: auto;
 }
 
-.yaddasht ul {
+.review ul {
     padding: 5px;
 }
 
-.yaddasht ul li {
+.review ul li {
     border-bottom: 1px solid #E6E6E6;
     padding: 5px;
 }
 
-.yaddasht time {
-    width: 85px;
+.review time {
+    width: 88px;
     color: #666;
-    font-size: .6em;
+    font-size: .7em;
     padding: 4px;
     margin: 5px 0;
     display: block;
 }
 
-.yaddasht ul li:hover time {
+.review ul li:hover time {
     width: 100px;
     background-color: #787878;
     color: #fff;
@@ -463,21 +409,21 @@ header .responsive-nav ul {
     -o-transition: all .4s ease-in;
 }
 
-.yaddasht .image-date {
+.review .image-date {
     width: 40%;
     float: right;
 }
 
-.yaddasht .title-name {
+.review .title-name {
     width: 55%;
     float: left;
 }
 
-.yaddasht .title-name h4 {
+.review .title-name h4 {
     margin: 0;
 }
 
-.yaddasht .title-name a {
+.review .title-name a {
     font-size: .8em;
     line-height: 25px;
     padding: 3px;
@@ -485,12 +431,12 @@ header .responsive-nav ul {
     display: block;
 }
 
-.yaddasht .title-name a i {
+.review .title-name #name-icon {
     color: green;
-    font-size: 1em;
+    font-size: .8em;
 }
 
-.yaddasht .more {
+.review .more {
     padding: 4px 10px;
     font-size: .9em;
     color: #fff;
@@ -500,7 +446,7 @@ header .responsive-nav ul {
     opacity: .4;
 }
 
-.yaddasht .more:hover {
+.review .more:hover {
     opacity: 1;
 }
 
@@ -531,17 +477,7 @@ header .responsive-nav ul {
     padding: 10px;
 }
 
-.first-box-image {
-    padding-right: 10px;
-}
-
 .first-box-image a {
-    display: block;
-}
-
-.first-box-image img {
-    width: 100%;
-    height: auto;
     display: block;
 }
 
@@ -549,6 +485,7 @@ header .responsive-nav ul {
     .first-box-image {
         width: 60%;
         float: left;
+        padding-right: 10px;
     }
 }
 
@@ -566,13 +503,8 @@ header .responsive-nav ul {
 
 .first-box h1 a {
     color: #1a7e43;
-    line-height: 25px;
+    line-height: 30px;
     font-size: .6em;
-}
-
-.first-box h1 a {
-    margin: 16px auto;
-    line-height: 23px;
     display: block;
 }
 
@@ -595,6 +527,8 @@ header .responsive-nav ul {
     color: #303030;
     line-height: 24px;
     text-align: justify;
+    padding-top: 10px;
+    margin: 0;
 }
 
 .first-box img {
@@ -643,26 +577,6 @@ header .responsive-nav ul {
 
 .second-box .second-box-title-lead p {
     color: #fff;
-}
-
-/***************************HEADER-NEWS*************************/
-
-.header-news {
-    display: block;
-    background-image: url(../images/hashor-min.png);
-}
-
-.header-news h3 {
-    background-color: #c92727;
-    display: inline-block;
-    margin: 0;
-}
-
-.header-news a {
-    color: #fff;
-    font-size: .8em;
-    padding: 8px 12px;
-    display: block;
 }
 
 /***************************column-mid-NEWS*************************/
@@ -725,12 +639,11 @@ header .responsive-nav ul {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 10px;
 }
 
 .news .news-details {
     width: 100%;
-    padding: 10px;
+    padding-right: 10px;
 }
 
 @media screen and (min-width:750px) {
@@ -740,11 +653,24 @@ header .responsive-nav ul {
     }
 }
 
+.up-title {
+    color: #1E713C;
+    padding: 15px 0;
+    font-size: 1.2em;
+}
+
+@media screen and (min-width:750px) {
+    .up-title {
+        padding: 0 0 10px 0;
+        font-size: 1em;
+    }
+}
+
 .news .lead p {
     color: #666;
     text-align: justify;
     line-height: 25px;
-    font-size: .8em;
+    font-size: .9em;
 }
 
 .news .more {
@@ -819,7 +745,7 @@ header .responsive-nav ul {
 
 .last-news li {
     border-bottom: 1px solid #e4e4e4;
-    padding: 5px 10px;
+    padding: 5px 0;
 }
 
 .last-news a {
@@ -864,8 +790,11 @@ header .responsive-nav ul {
 /***************************FOOTER*************************/
 
 footer {
-    background-color: #1D1D1D;
-    padding: 10px 0;
+    background-color: #1d1d1d;
+    background-image: url(../images/shape-banner1.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding: 15px 0;
 }
 
 footer nav {
@@ -880,6 +809,10 @@ footer nav i {
     padding-right: 4px;
 }
 
+footer nav {
+    text-align: center;
+}
+
 footer nav ul li {
     display: inline-block;
 }
@@ -888,7 +821,7 @@ footer nav a {
     color: #fff;
     display: inline-block;
     padding: 15px 5px;
-    font-size: .7em;
+    font-size: .8em;
 }
 
 footer nav a:hover {
@@ -898,6 +831,7 @@ footer nav a:hover {
 .content-us {
     display: flex;
     justify-content: center;
+    padding-top: 10px;
 }
 
 .content-us ul li {
@@ -906,7 +840,7 @@ footer nav a:hover {
 
 .content-us ul a {
     color: #fff;
-    padding: 15px 10px;
+    padding: 10px;
     font-size: .8em;
     display: block;
 }
@@ -916,7 +850,6 @@ footer nav a:hover {
 }
 
 footer .social {
-    outline: 2px solid #fff;
     display: flex;
     justify-content: center;
 }
@@ -933,8 +866,34 @@ footer .social a:hover {
     text-align: center;
     color: #ec8f8f;
     font-size: .8em;
-    margin: 30px 0;
+    margin: 15px 0;
     line-height: 25px;
     padding: 0 10px;
 }
 
+.logo-creator {
+    width: 181px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 25px;
+    display: flex;
+}
+
+.img-creartor img {
+    width: 45px;
+    display: inline;
+}
+
+.img-creartor {
+    display: inline;
+}
+
+.text-creator {
+    display: inline;
+}
+
+.text-creator a {
+    color: #fff;
+    display: block;
+    font-size: .9em;
+}
