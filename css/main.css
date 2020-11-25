@@ -793,7 +793,8 @@ footer {
     background-image: url(../images/shape-banner1.png);
     background-repeat: no-repeat;
     background-position: left bottom;
-    padding: 15px 0;
+    margin-top: 20px;
+
 }
 
 footer nav {

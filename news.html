@@ -6,88 +6,304 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>خبر</title>
     <link rel="stylesheet" href="./css/news.css">
+    <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/global.css">
     <link rel="icon" href="./favicon.ico" type="image/gif">
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/main.js"></script>
 </head>
 <!--------------------------------------------START-------------------------------------->
 
 <body>
-    <div class="wrapper">
-        <div class="margin-top"></div>
-        <div class="pull-right">
-            <div class="wrapper-news">
-                <article>
-                    <!--------------------------------------------HEADER-------------------------------------->
-                    <header>
-                        <div class="breadcrumb">
-                            <a href="#">خانه</a>
-                            <a href="#"><i class="fa fa-chevron-left"></i></a>
-                            <a href="#">فرهنگی</a>
-                            <div class="breadcrumb-left">
-                                <a href="#"><i class="fa fa-plus-square"></i></a>
-                                <a href="#">A</a>
-                                <a href="#"><i class="fa fa-minus-square"></i></a>
-                            </div>
-                        </div>
-                        <h1 class="title">دانلود سریال کرگدن / دانلود قسمت اول سریال کرگدن</h1>
-                        <div class="lead">دانلود سریال کرگدن دانلود قسمت اول سریال کرگدن دانلود قسمت 1 سریال کرگدن</div>
-                        <a class="up-title">up-title</a>
-                        <div class="primary-file"> <a href="#"><img src="./images/kargadan.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="news-tolls">
-                            <a href="#"><i class="fa fa-id-card"></i></a>
-                            <span>کد خبر : 8</span>
-                            <a href="#"><i class="fa fa-envelope"></i></a>
-                            <a href="#"><i class="fa fa-print"></i></a>
-                            <div class="news-tolls-left">
-                                <time datetime="2020-04-08"> <i class="fa fa-clock"></i> ۱۳۹۹/۰۸/۰۳ ۱۲:۱۷:۲۹ </time>
-                            </div>
-                        </div>
-                    </header>
-                    <!--------------------------------------------ECO-DETAILS-------------------------------------->
-
-                    <div class="eco-details">
-                        <p>دانلود سریال کرگدن دانلود قسمت اول سریال کرگدن دانلود قسمت 1 سریال کرگدن
-
-                        </p>
-                        <p>سریال کرگدن در سال 1398 ساخته شده است. این سریال محصول کشور ایران و در ژانر اکشن وماجراجویی
-                            می‌باشد در سریال کرگدن هدی زین العابدین، مصطفی زمانی و سارا بهرامی به هنرمندی پرداخته‌اند.
-
-                        </p>
+    <header>
+        <div class="header-news-bg">
+            <div class="wrapper">
+                <div class="social">
+                    <div class="icons">
+                        <a href="#" title="گوگل پلاس"> <i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" title="اینستاگرام"> <i class="fab fa-instagram"></i></a>
+                        <a href="#" title="تلگرام"> <i class="fab fa-telegram-plane"></i></a>
+                        <a href="#" title="فیس بوک"> <i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="تویتر"> <i class="fab fa-twitter"></i></a>
+                        <a href="#" title="آر اس اس"> <i class="fa fa-rss"></i></a>
                     </div>
-                    <!--------------------------------------------TAGS-------------------------------------->
-
-                    <div class="tags">
-                        <a href="#"> <i class="fa fa-tag"></i> ایران</a>
-                        <a href="#"> <i class="fa fa-tag"></i> سریال</a>
-                        <a href="#"> <i class="fa fa-tag"></i> کرگردن</a>
-                        <a href="#"> <i class="fa fa-tag"></i> دانلود</a>
-                        <a href="#"> <i class="fa fa-tag"></i> قسمت</a>
-
-                    </div>
-                    <!--------------------------------------------SHORT LINKS-------------------------------------->
-
-                    <div class="short-links">
-                        <span>لینک کوتاه :</span>
-                        <div class="short-links-left">
-                            http://www.topmark.ir/fa/tiny/news-8
+                </div>
+                <div class="mosalas-header">
+                    <div class="container">
+                        <div class="logo">
+                            <a href="#" title="مثلث"><img src="images/logo.png" alt="logo"></a>
+                        </div>
+                        <!--------------------------------DATE-TIME--------------------------------->
+                        <div class="date-search">
+                            <time datetime="2020-04-08">یکشنبه ۲۷ مهر ۱۳۹۹ <i class="fa fa-circle "></i> 18 October 2020
+                            </time>
+                            <form>
+                                <input type="search" placeholder="جستجو">
+                                <a title="جستجو" href="#"><i class="fa fa-search"></i></a>
+                            </form>
                         </div>
                     </div>
-                    <!--------------------------------------------SHEAR-------------------------------------->
-
-                    <div class="shear">
-                        با دوستان خود به اشتراک بگذارید:
-                        <div class="shear-left">
-                            <a href="#"><i class="fa fa-paper-plane"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        </div>
-                    </div>
-                </article>
+                </div>
             </div>
+        </div>
+        <!--------------------------------RESPONSIVE - NAVICATION-------------------------------->
+        <div class="responsive-nav">
+            <div class="wrapper">
+                <div class="nav-bar">
+                    <a href="#" title="منو" class="icon-bar">منو</a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a title="صفحه نخست" href=""> صفحه نخست </a></li>
+                        <li><a title="اخبار" href="#"> اخبار </a></li>
+                        <li><a title="سیاست" href="#"> سیاست</a></li>
+                        <li><a title="بین الملل" href="#"> بین الملل</a></li>
+                        <li><a title="فرهنگ" href="#"> فرهنگ </a></li>
+                        <li><a title="اقتصاد" href="#"> اقتصاد</a></li>
+                        <li><a title="اجتماعی" href="#"> اجتماعی </a></li>
+                        <li><a title="ورزش" href="#"> ورزش </a></li>
+                        <li><a title="عکس" href="#"> عکس </a></li>
+                        <li><a title="چندرسانه ای" href="#"> چندرسانه ای </a></li>
+                        <li><a title="نویسندگان مثلث" href="#"> نویسندگان مثلث </a></li>
+                        <li><a title="تبلیغات" href="#"> تبلیغات </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        </div>
+        <!--------------------------------NORMAL - NAVICATION-------------------------------->
+        <div class="normal-nav">
+            <div class="wrapper">
+                <nav>
+                    <ul>
+                        <li><a title="صفحه نخست" href="./index.html"> صفحه نخست </a></li>
+                        <li><a title="اخبار" href="./news.html"> اخبار </a></li>
+                        <li><a title="سیاست" href="#"> سیاست</a></li>
+                        <li><a title="بین الملل" href="#"> بین الملل</a></li>
+                        <li><a title="فرهنگ" href="#"> فرهنگ </a></li>
+                        <li><a title="اقتصاد" href="#"> اقتصاد</a></li>
+                        <li><a title="اجتماعی" href="#"> اجتماعی </a></li>
+                        <li><a title="ورزش" href="#"> ورزش </a></li>
+                        <li><a title="عکس" href="#"> عکس </a></li>
+                        <li><a title="چندرسانه ای" href="#"> چندرسانه ای </a></li>
+                        <li><a title="نویسندگان مثلث" href="#"> نویسندگان مثلث </a></li>
+                        <li><a title="تبلیغات" href="#"> تبلیغات </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    <div class="margin-top"></div>
+    <div class="wrapper">
+        <div class="pull-right">
+            <article>
+                <!-------------------------------------------- -------------------------------------->
+                <div class="breadcrumb">
+                    <a href="#">خانه</a>
+                    <a href="#"><i class="fa fa-chevron-left"></i></a>
+                    <a href="#">فرهنگی</a>
+                    <div class="breadcrumb-left">
+                        <a href="#"><i class="fa fa-plus-square"></i></a>
+                        <a href="#">A</a>
+                        <a href="#"><i class="fa fa-minus-square"></i></a>
+                    </div>
+                </div>
+                <header>
+                    <a class="up-title"></a>
+                    <h1 class="title">دانلود سریال کرگدن / دانلود قسمت اول سریال کرگدن</h1>
+                    <div class="lead">دانلود سریال کرگدن دانلود قسمت اول سریال کرگدن دانلود قسمت 1 سریال کرگدن</div>
+                    <div class="primary-file"> <a href="#"><img src="./images/kargadan.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="news-tolls">
+                        <a href="#"><i class="fa fa-id-card"></i></a>
+                        <span>کد خبر : 8</span>
+                        <a href="#"><i class="fa fa-envelope"></i></a>
+                        <a href="#"><i class="fa fa-print"></i></a>
+                        <div class="news-tolls-left">
+                            <time datetime="2020-04-08"> <i class="fa fa-clock"></i> ۱۳۹۹/۰۸/۰۳ ۱۲:۱۷:۲۹ </time>
+                        </div>
+                    </div>
+                </header>
+                <!--------------------------------------------ECHO-DETAILS-------------------------------------->
+
+                <div class="echo-details">
+                    <audio controls preload="none" src="./1223.mp3" src="./1223.ogg">
+                    </audio>
+                    <video controls src="./123.mp4">
+                    </video>
+                    <a href="#"> <img src="./BWLNbF.jpg" alt=""> </a>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>نام</th>
+                                <th>نام خانوادگی</th>
+                                <th> سن</th>
+                                <th>سابقه</th>
+                                <th>بیماری</th>
+                                <th>قد</th>
+                                <th>وزن</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>علی</td>
+                                <td>رضایی</td>
+                                <td>21</td>
+                                <td>10 سال</td>
+                                <td>خیر</td>
+                                <td>157</td>
+                                <td>60</td>
+                            </tr>
+                            <tr>
+                                <td>محمد</td>
+                                <td>کریمی</td>
+                                <td>28</td>
+                                <td>1 سال</td>
+                                <td>بله</td>
+                                <td>167</td>
+                                <td>65</td>
+                            </tr>
+                            <tr>
+                                <td>رضا</td>
+                                <td>اکبری</td>
+                                <td>18</td>
+                                <td>10 سال</td>
+                                <td>خیر</td>
+                                <td>157</td>
+                                <td>60</td>
+                            </tr>
+                            <tr>
+                                <td>علی</td>
+                                <td>رضایی</td>
+                                <td>21</td>
+                                <td>1 سال</td>
+                                <td>بله</td>
+                                <td>167</td>
+                                <td>65</td>
+                            </tr>
+                            <tr>
+                                <td>محمد</td>
+                                <td>کریمی</td>
+                                <td>28</td>
+                                <td>10 سال</td>
+                                <td>خیر</td>
+                                <td>157</td>
+                                <td>60</td>
+                            </tr>
+                            <tr>
+                                <td>رضا</td>
+                                <td>اکبری</td>
+                                <td>18</td>
+                                <td>1 سال</td>
+                                <td>بله</td>
+                                <td>167</td>
+                                <td>65</td>
+                            </tr>
+                            <tr>
+                                <td>علی</td>
+                                <td>رضایی</td>
+                                <td>21</td>
+                                <td>10 سال</td>
+                                <td>خیر</td>
+                                <td>157</td>
+                                <td>60</td>
+                            </tr>
+                            <tr>
+                                <td>محمد</td>
+                                <td>کریمی</td>
+                                <td>28</td>
+                                <td>1 سال</td>
+                                <td>بله</td>
+                                <td>167</td>
+                                <td>65</td>
+                            </tr>
+                            <tr>
+                                <td>رضا</td>
+                                <td>اکبری</td>
+                                <td>18</td>
+                                <td>10 سال</td>
+                                <td>خیر</td>
+                                <td>157</td>
+                                <td>60</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ul>
+                        <li>
+                            <a href="#">دانلود قسمت اول</a>
+                        </li>
+                        <li>
+                            <a href="#">دانلود قسمت دوم</a>
+                        </li>
+                        <li>
+                            <a href="#">دانلود قسمت سوم</a>
+                        </li>
+                        <li>
+                            <a href="#">دانلود قسمت چهار</a>
+                        </li>
+                        <li>
+                            <a href="#">دانلود قسمت پنج</a>
+                        </li>
+                        <li>
+                            <a href="#">دانلود قسمت شش</a>
+                        </li>
+                        <li>
+                            <a href="#">دانلود قسمت هفت</a>
+                        </li>
+                        <li>
+                            <a href="#">دانلود قسمت هشت</a>
+                        </li>
+                        <li>
+                            <a href="#">دانلود قسمت نهم</a>
+                        </li>
+                        <li>
+                            <a href="#">دانلود قسمت ده</a>
+                        </li>
+                        <li>
+                            <a href="#">دانلود قسمت یازده</a>
+                        </li>
+                    </ul>
+                    <p>دانلود سریال کرگدن دانلود قسمت اول سریال کرگدن دانلود قسمت 1 سریال کرگدن
+
+                    </p>
+                    <p>سریال کرگدن در سال 1398 ساخته شده است. این سریال محصول کشور ایران و در ژانر اکشن وماجراجویی
+                        می‌باشد در سریال کرگدن هدی زین العابدین، مصطفی زمانی و سارا بهرامی به هنرمندی پرداخته‌اند.
+
+                    </p>
+                </div>
+                <!--------------------------------------------TAGS-------------------------------------->
+
+                <div class="tags">
+                    <a href="#"> <i class="fa fa-tag"></i> ایران</a>
+                    <a href="#"> <i class="fa fa-tag"></i> سریال</a>
+                    <a href="#"> <i class="fa fa-tag"></i> کرگردن</a>
+                    <a href="#"> <i class="fa fa-tag"></i> دانلود</a>
+                    <a href="#"> <i class="fa fa-tag"></i> قسمت</a>
+
+                </div>
+                <!--------------------------------------------SHORT LINKS-------------------------------------->
+
+                <div class="short-links">
+                    <span>لینک کوتاه :</span>
+                    <div class="short-links-left">
+                        http://www.topmark.ir/fa/tiny/news-8
+                    </div>
+                </div>
+                <!--------------------------------------------SHEAR-------------------------------------->
+
+                <div class="shear">
+                    با دوستان خود به اشتراک بگذارید:
+                    <div class="shear-left">
+                        <a href="#"><i class="fa fa-paper-plane"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </article>
             <div class="margin-top"></div>
             <!--------------------------------------------NEWS SECOND-------------------------------------->
 
@@ -290,7 +506,69 @@
             </div>
         </div>
     </div>
+    <div class="clearfix"></div>
+    <!--------------------------------FOOTER------------------------------------>
 
+    <footer>
+        <nav>
+            <div class="wrapper">
+                <ul>
+                    <li><a title="صفحه نخست" href="#">صفحه نخست</a><i class="fa fa-circle"></i></li>
+                    <li><a title=" سیاسی" href="#"> سیاسی</a><i class="fa fa-circle"></i></li>
+                    <li><a title=" بین الملل" href="#"> بین الملل</a><i class="fa fa-circle"></i></li>
+                    <li><a title="فرهنگی" href="#">فرهنگی</a><i class="fa fa-circle"></i></li>
+                    <li><a title="اقتصادی" href="#">اقتصادی</a><i class="fa fa-circle"></i></li>
+                    <li><a title="جامعه" href="#">جامعه</a><i class="fa fa-circle"></i></li>
+                    <li><a title="ورزشی" href="#">ورزشی</a><i class="fa fa-circle"></i></li>
+                    <li><a title=" عکس" href="#"> عکس</a><i class="fa fa-circle"></i></li>
+                    <li><a title="چندرسانه ای" href="#">چندرسانه ای</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="content-us">
+            <ul>
+                <li>
+                    <a title="درباره ما" href="#">درباره ما</a>
+                </li>
+                <li>
+                    <a title="تماس باما" href="#">تماس باما</a>
+                </li>
+                <li>
+                    <a title="پیوندها" href="#">پیوندها</a>
+                </li>
+                <li>
+                    <a title="تبلیغات" href="#">تبلیغات</a>
+                </li>
+            </ul>
+        </div>
+        <div class="social">
+            <div class="icons">
+                <a href="#" title="گوگل پلاس"> <i class="fab fa-google-plus-g"></i></a>
+                <a href="#" title="اینستاگرام"> <i class="fab fa-instagram"></i></a>
+                <a href="#" title="تلگرام"> <i class="fab fa-telegram-plane"></i></a>
+                <a href="#" title="فیس بوک"> <i class="fab fa-facebook-f"></i></a>
+                <a href="#" title="تویتر"> <i class="fab fa-twitter"></i></a>
+                <a href="#" title="آر اس اس"> <i class="fa fa-rss"></i></a>
+            </div>
+        </div>
+        <div class="creator">
+            <p>تمامی حقوق این سایت متعلق به پایگاه خبری تحلیلی مثلث میباشد و استفاده از مطالب آن با ذکر منبع بلامانع است
+            </p>
+        </div>
+        <div class="logo-creator">
+            <a href="#" title="creator">
+                <div class="img-creartor">
+                    <img src="./images/aasaam.png" alt="logo">
+                </div>
+                <div class="text-creator">
+                    <a href="#">طراحی سایت خبری و خبرگزاری آسام</a>
+                </div>
+            </a>
+        </div>
+    </footer>
 </body>
+
+
+
 
 </html>
