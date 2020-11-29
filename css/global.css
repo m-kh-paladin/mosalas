@@ -70,7 +70,7 @@ img {
 }
 
 .header-news h3 {
-    background-color: #c92727;
+    background-color: #6E6E6E;
     display: inline-block;
     margin: 0;
 }
@@ -253,13 +253,14 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
     width: 100%;
     padding: 8px;
     margin: 10px auto;
+    border: none;
 }
 
 .date-search form i {
     position: absolute;
     color: #8d8484;
-    font-size: 1.2em;
-    top: 18px;
+    font-size: .9em;
+    top: 20px;
     left: 11px;
 }
 

@@ -79,9 +79,9 @@ header .lead {
 }
 
 .up-title {
-    color: olivedrab;
+    color: #282525;
     display: block;
-    padding: 20px 0;
+    padding: 35px 0 0;
 }
 
 .primary-file {
@@ -107,7 +107,7 @@ header .lead {
     padding: 0 2px;
 }
 
-.news-tolls span {
+.news-tolls h3 {
     color: #756E75;
     font-size: .9em;
 }
@@ -196,7 +196,6 @@ header .lead {
 
 .tags {
     padding: 15px 0;
-    text-align: center;
 }
 
 @media screen and (min-width:820px) {

@@ -86,9 +86,13 @@ body {
     }
 }
 
+section .top-news-detail:hover a {
+    color: #c92727;
+}
+
 .pull-right section .lead {
     color: #303030;
-    line-height: 22px;
+    line-height: 25px;
     margin: 0;
 }
 

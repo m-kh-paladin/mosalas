@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ECECEC;
+}
+
+.wrapper {
+    padding: 0 8px;
+}
+
+/******************************************PULL-RIGHT**********************************************/
+
+.pull-right {
+    width: 100%;
+    display: inline-block;
+}
+
+@media screen and (min-width:450px) {
+    .pull-right {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:850px) {
+    .pull-right {
+        width: 70%;
+        padding-left: 14px;
+    }
+}
+
+/******************************************* PART 2  ************************************************/
+
+.title h3 {
+    margin: 0;
+}
+
+.second-subject .title h3 a {
+    color: #3B3B3B;
+    line-height: 25px;
+    display: block;
+    padding: 15px 0;
+
+}
+@media screen and (min-width:550px){
+.second-subject .title h3 a {
+    padding: 0;
+}
+    
+}
+
+.second-subject .second-subject-pic a {
+    display: block;
+}
+
+.second-subject {
+    border: 1px solid #e4e4e4;
+    font-size: .9em;
+    width: 100%;
+}
+
+.second-subject li {
+    background-color: #fff;
+    border-bottom: 1px solid #E4E4E4;
+    padding: 10px;
+}
+
+.second-subject li:hover {
+    background-color: #EFEFEF;
+    transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+}
+
+.second-subject li:hover h3 a {
+    transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    color: #1a7e43;
+}
+
+.second-subject .second-subject-pic {
+    width: 100%;
+}
+
+@media screen and (min-width:550px) {
+    .second-subject .second-subject-pic {
+        width: 30%;
+        float: right;
+    }
+}
+
+.second-subject .second-subject-pic img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.second-subject .second-subject-details {
+    width: 100%;
+    padding-right: 10px;
+}
+
+@media screen and (min-width:550px) {
+    .second-subject .second-subject-details {
+        width: 70%;
+        float: left;
+    }
+}
+
+.pull-right time {
+    width: 120px;
+    color: #1A7E43;
+    font-size: .9em;
+    padding: 8px;
+    margin: 5px 0;
+    display: block;
+}
+
+.second-subject .lead p {
+    color: #666;
+    text-align: justify;
+    line-height: 25px;
+    font-size: 0.9em;
+}
+
+.pull-right .more {
+    color: #fff;
+    background-color: #c92727;
+    display: block;
+    text-align: center;
+    padding: 7px;
+}
+
