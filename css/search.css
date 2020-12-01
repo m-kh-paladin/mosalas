@@ -248,9 +248,6 @@ select {
     padding: 0 15px 20px 0;
 }
 
-@media only screen and (min-width:550px) {
-    .options {}
-}
 
 .pull-left i {
     position: absolute;
