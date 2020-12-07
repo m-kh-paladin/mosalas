@@ -425,7 +425,7 @@ header .responsive-nav ul {
     display: block;
 }
 
-.review .title-name #name-icon {
+.review .title-name .name-icon {
     color: green;
     font-size: .8em;
 }

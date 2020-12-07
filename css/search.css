@@ -179,10 +179,6 @@ body {
     padding-right: 10px;
 }
 
-hr {
-    border-top: 2px dashed #c92727;
-    margin: 15px 0;
-}
 
 select {
     width: 20%;
@@ -197,6 +193,7 @@ select {
 .keyword {
     display: flex;
     justify-content: space-around;
+    padding: 10px 0;
 }
 
 .keyword input {
@@ -206,14 +203,14 @@ select {
 .start {
     display: flex;
     justify-content: space-evenly;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 .end {
     width: 99.5%;
     display: flex;
     justify-content: space-evenly;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 .show {
