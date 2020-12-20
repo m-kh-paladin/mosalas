@@ -488,7 +488,7 @@ header .responsive-nav ul {
         width: 40%;
         float: right;
     }
-}
+}   
 
 .top-news h1 {
     margin: 0;
@@ -521,7 +521,7 @@ header .responsive-nav ul {
     color: #303030;
     line-height: 24px;
     text-align: justify;
-    padding-top: 10px;
+    padding: 10px 0;
     margin: 0;
 }
 
@@ -734,7 +734,6 @@ header .responsive-nav ul {
     padding: 0 20px;
     width: 100%;
     display: inline-block;
-    
 }
 
 .last-news li {
@@ -794,7 +793,6 @@ footer {
     background-repeat: no-repeat;
     background-position: left bottom;
     margin-top: 20px;
-
 }
 
 footer nav {

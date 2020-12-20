@@ -37,6 +37,7 @@ body {
 }
 
 .pull-right section {
+    max-width: 100%;
     display: inline-block;
 }
 
