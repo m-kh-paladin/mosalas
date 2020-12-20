@@ -41,19 +41,19 @@ body {
     display: inline-block;
 }
 
-.pull-right section .top-news-images {
+.pull-right section #lightSlider img {
     width: 100%;
 }
 
 @media screen and (min-width:550px) {
-    .pull-right section .top-news-image {
+    .pull-right section #lightSlider img {
         width: 50%;
         float: right;
     }
 }
 
-.pull-right section .top-news-detail {
-    width: 100%;
+#lightSlider img {
+    width: 50%;
 }
 
 @media screen and (min-width:550px) {

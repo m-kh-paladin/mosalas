@@ -471,13 +471,13 @@ header .responsive-nav ul {
     padding: 10px;
 }
 
-.top-news-image a {
+#lightSlider a {
     display: block;
 }
 
 @media screen and (min-width:750px) {
-    .top-news-image {
-        width: 60%;
+    #lightSlider img {
+        width: 55%;
         float: left;
         padding-right: 10px;
     }
@@ -485,7 +485,7 @@ header .responsive-nav ul {
 
 @media screen and (min-width:750px) {
     .top-news-details {
-        width: 40%;
+        width: 43%;
         float: right;
     }
 }   
